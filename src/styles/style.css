@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ 
+img {
+  display: block;
+}
+
+/*
+  AppBar
+*/
+ 
+.app-bar {
+  padding: 8px 16px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+}
+ 
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+ 
+.app-bar .app-bar__brand h1 {
+  color: #db0000;
+  text-transform: uppercase;
+  font-size: 22px;
+  user-select: none;
+}
+ 
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 50px;
+  left: -180px;
+  width: 150px;
+  transition: all 0.3s;
+  padding: 8px;
+  background-color: white;
+  overflow: hidden;
+}
+ 
+.app-bar .app-bar__navigation.open {
+  left: 0;
+}
+ 
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+ 
+/*
+  Main Content
+*/
+ 
+main {
+  padding: 32px;
+  flex: 1;
+}
+ 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.container-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+ /* 
+Card Item
+*/
+.card-item {
+  width: 100%;
+  box-shadow: 5px 8px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-item-image-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.card-item-image-wrap img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-item-image-wrap .image-tag {
+  position: absolute;
+  top: 10px;
+  background-color: #fff;
+  padding: 8px 15px;
+}
+
+.card-item-content {
+  padding: 15px;
+}
+
+.card-item-content .rating {
+  color: #f5b914;
+  margin: 1rem 0;
+}
+
+.card-item-content .res-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-item-content .res-name a {
+  color: #2b2b2b;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.card-item-content .res-name a:hover {
+  color: #e78282;
+}
+
+.card-item-content .res-desc {
+  color: #7e7e7e;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+ 
+/*
+  Restaurant Detail
+*/
+
+.restoMain {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 950px;
+}
+
+.restoMain h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ff7c7c;
+
+  text-align: center;
+}
+
+.restoMain h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2b2b2b;
+}
+
+.restoMain .restaurant__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.resto-detail-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+
+  margin-bottom: 3rem;
+}
+
+.restoMain .restaurant__poster {
+  width: 100%;
+  object-fit: cover;
+
+  border-radius: 2rem;
+}
+
+.restoMain .resto__description {
+  margin-bottom: 3rem;
+}
+
+.restoMain .resto-menu {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Review */
+
+.review-title {
+
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.resto-review {
+  max-width: 950px;
+  margin: 0 auto;
+
+  border: 1px solid #c9c9c9;
+  padding: .5rem;
+}
+
+.resto-review .resto-review-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+.resto-review .resto-review-header .user-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.add-review-title {
+  margin: 3rem;
+  text-align: center;
+}
+
+.review-form {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.review-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.review-form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.add-favorite {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  color: #ff5151;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-favorite span {
+  font-size: 3rem;
+}
+
+.add-favorite:active {
+  color: #f75dd0;
+}
+
+/*
+  Footer
+*/
+ 
+footer {
+  padding: 16px;
+}
+ 
+footer p {
+  text-align: center;
+  color: #aaaaaa;
+}
+ 
+footer p a {
+  color: #db0000;
+  text-decoration: none;
+}

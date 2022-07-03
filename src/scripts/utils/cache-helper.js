@@ -1,4 +1,4 @@
-import CONFIG from '../globals/config';
+import CONFIG from '../global/config';
 
 const CacheHelper = {
     async cachingAppShell(requests) {

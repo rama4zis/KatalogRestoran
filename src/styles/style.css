@@ -2,15 +2,15 @@
   padding: 0;
   margin: 0;
 }
- 
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
- 
+
 img {
   display: block;
 }
@@ -18,7 +18,7 @@ img {
 /*
   AppBar
 */
- 
+
 .app-bar {
   padding: 8px 16px;
   background-color: white;
@@ -30,12 +30,12 @@ img {
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
- 
+
 .app-bar .app-bar__menu {
   display: flex;
   align-items: center;
 }
- 
+
 .app-bar .app-bar__menu button {
   background-color: transparent;
   border: none;
@@ -43,19 +43,19 @@ img {
   padding: 8px;
   cursor: pointer;
 }
- 
+
 .app-bar .app-bar__brand {
   display: flex;
   align-items: center;
 }
- 
+
 .app-bar .app-bar__brand h1 {
   color: #db0000;
   text-transform: uppercase;
   font-size: 22px;
   user-select: none;
 }
- 
+
 .app-bar .app-bar__navigation {
   position: absolute;
   top: 50px;
@@ -66,11 +66,11 @@ img {
   background-color: white;
   overflow: hidden;
 }
- 
+
 .app-bar .app-bar__navigation.open {
   left: 0;
 }
- 
+
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
@@ -79,16 +79,16 @@ img {
   margin-bottom: 5px;
   width: 100%;
 }
- 
+
 /*
   Main Content
 */
- 
+
 main {
   padding: 32px;
   flex: 1;
 }
- 
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -106,7 +106,7 @@ main {
   grid-gap: 3rem;
 }
 
- /* 
+/* 
 Card Item
 */
 .card-item {
@@ -162,7 +162,7 @@ Card Item
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
- 
+
 /*
   Restaurant Detail
 */
@@ -229,7 +229,6 @@ Card Item
 /* Review */
 
 .review-title {
-
   margin: 3rem 0;
   text-align: center;
 }
@@ -237,9 +236,9 @@ Card Item
 .resto-review {
   max-width: 950px;
   margin: 0 auto;
-
+  margin-bottom: 2rem;
   border: 1px solid #c9c9c9;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .resto-review .resto-review-header {
@@ -286,39 +285,41 @@ Card Item
   border: 1px solid #c9c9c9;
   border-radius: 2rem;
   margin-bottom: 1rem;
-}
-
-.add-favorite {
-  position: fixed;
-  bottom: 2rem;
-  right: 1.5rem;
-  color: #ff5151;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 
-.add-favorite span {
-  font-size: 3rem;
-}
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
 
-.add-favorite:active {
-  color: #f75dd0;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
 }
 
 /*
   Footer
 */
- 
+
 footer {
   padding: 16px;
 }
- 
+
 footer p {
   text-align: center;
   color: #aaaaaa;
 }
- 
+
 footer p a {
   color: #db0000;
   text-decoration: none;

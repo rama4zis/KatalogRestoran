@@ -18,7 +18,7 @@ const Home = {
 
     try {
       const restaurantList = await RestaurantSource.getRestaurantList();
-      console.log(restaurantList);
+      // console.log(restaurantList);
       restaurantContainer.innerHTML = '';
 
       restaurantList.forEach(restaurantItem => {

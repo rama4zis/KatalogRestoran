@@ -45,7 +45,41 @@ const createRestaurantDetailTemplate = (result) => `
 
 `;
 
+const createReviewTemplate = (result) => `
+    <div class="resto-review">
+        <div class="resto-review-header">
+            <div class="user-name">
+                <span>${result.name}</span>
+            </div>
+            <div class="date-review">
+                <span>${result.date}</span>
+            </div>
+        </div>
+        <hr />
+        <div class="resto-review-content">
+            <p>
+                "${result.review}"
+            </p>
+        </div>
+    </div>  
+`;
+
+const createLikeButtonTemplate = () => `
+<button aria-label="like this movie" id="likeButton" class="like">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
+</button>
+`;
+
+const createLikedButtonTemplate = () => `
+<button aria-label="unlike this movie" id="likeButton" class="like">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+</button>
+`;
+
 export {
     createRestaurantItemTemplate,
-    createRestaurantDetailTemplate
+    createRestaurantDetailTemplate,
+    createLikeButtonTemplate,
+    createLikedButtonTemplate,
+    createReviewTemplate
 };

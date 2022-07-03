@@ -15,6 +15,20 @@ img {
   display: block;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /*
   AppBar
 */
@@ -78,6 +92,12 @@ img {
   padding: 8px;
   margin-bottom: 5px;
   width: 100%;
+  
+  font-size: 1.5rem;
+}
+
+#hamburgerButton {
+  font-size: 2.5rem;
 }
 
 /* Banner  */
@@ -168,6 +188,8 @@ Card Item
   color: #2b2b2b;
   text-decoration: none;
   transition: all 0.3s;
+
+  font-size: 2.4rem;
 }
 
 .card-item-content .res-name a:hover {
@@ -286,6 +308,8 @@ Card Item
   border: 1px solid #c9c9c9;
   border-radius: 2rem;
   margin-bottom: 1rem;
+
+  font-size: 44px;
 }
 
 .review-form textarea {
@@ -294,6 +318,8 @@ Card Item
   border: 1px solid #c9c9c9;
   border-radius: 2rem;
   margin-bottom: 1rem;
+
+  font-size: 44px;
 }
 
 .review-form button {
@@ -340,4 +366,6 @@ footer p {
 footer p a {
   color: #db0000;
   text-decoration: none;
+
+  font-size: 44px;
 }

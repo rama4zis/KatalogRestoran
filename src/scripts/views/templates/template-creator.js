@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import CONFIG from '../../global/config';
 
 const createRestaurantItemTemplate = (result) => `
@@ -77,9 +78,9 @@ const createLikedButtonTemplate = () => `
 `;
 
 export {
-    createRestaurantItemTemplate,
-    createRestaurantDetailTemplate,
-    createLikeButtonTemplate,
-    createLikedButtonTemplate,
-    createReviewTemplate
+  createRestaurantItemTemplate,
+  createRestaurantDetailTemplate,
+  createLikeButtonTemplate,
+  createLikedButtonTemplate,
+  createReviewTemplate,
 };

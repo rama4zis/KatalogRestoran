@@ -189,7 +189,7 @@ Card Item
   text-decoration: none;
   transition: all 0.3s;
 
-  font-size: 2.4rem;
+  font-size: 44px;
 }
 
 .card-item-content .res-name a:hover {
@@ -365,9 +365,8 @@ footer p {
   color: #aaaaaa;
 }
 
-footer p a {
+footer p span {
   color: #db0000;
   text-decoration: none;
 
-  font-size: 44px;
 }

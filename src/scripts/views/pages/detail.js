@@ -1,8 +1,9 @@
+/* eslint-disable linebreak-style */
 import UrlParser from '../../routes/url-parser';
-import RestaurantSource from "../../data/restaurant-source";
+import RestaurantSource from '../../data/restaurant-source';
 import {
   createRestaurantDetailTemplate,
-  createReviewTemplate
+  createReviewTemplate,
 } from '../templates/template-creator';
 import LikeButtonInitiator from '../../utils/like-button-initiator';
 import FavoriteRestaurant from '../../data/favoriteres-idb';
@@ -47,14 +48,14 @@ const Detail = {
       const result = await RestaurantSource.getRestaurantDetail(url.id);
       restoMain.innerHTML = createRestaurantDetailTemplate(result.restaurant);
 
-      const customerReviews = result.restaurant.customerReviews;
-      customerReviews.forEach(review => {
+      const { customerReviews } = result.restaurant;
+      customerReviews.forEach((review) => {
         reviewContainer.innerHTML += createReviewTemplate(review);
       });
 
       LikeButtonInitiator.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
-        FavoriteRestaurant: FavoriteRestaurant,
+        FavoriteRestaurant,
         restaurant: {
           id: result.restaurant.id,
           name: result.restaurant.name,
@@ -68,7 +69,6 @@ const Detail = {
           customerReviews: result.restaurant.customerReviews,
         },
       });
-
     } catch (err) {
       // content.style.display = 'block';
       // load.style.display = 'none';

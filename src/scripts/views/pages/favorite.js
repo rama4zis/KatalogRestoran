@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import FavoriteResIdb from '../../data/favoriteres-idb';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
 
@@ -14,7 +15,6 @@ const Favorite = {
   },
 
   async afterRender() {
-    
     const restaurantContainer = document.querySelector('#restaurants');
 
     try {
@@ -22,13 +22,12 @@ const Favorite = {
       console.log(restaurantList);
       restaurantContainer.innerHTML = '';
 
-      restaurantList.forEach(restaurantItem => {
+      restaurantList.forEach((restaurantItem) => {
         restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurantItem);
       });
     } catch (error) {
-      
+      console.log(error);
     }
-    
   },
 };
 

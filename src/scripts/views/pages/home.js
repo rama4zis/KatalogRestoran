@@ -1,4 +1,5 @@
-import RestaurantSource from "../../data/restaurant-source";
+/* eslint-disable linebreak-style */
+import RestaurantSource from '../../data/restaurant-source';
 import { createRestaurantItemTemplate } from '../templates/template-creator';
 
 const Home = {
@@ -21,7 +22,7 @@ const Home = {
       // console.log(restaurantList);
       restaurantContainer.innerHTML = '';
 
-      restaurantList.forEach(restaurantItem => {
+      restaurantList.forEach((restaurantItem) => {
         restaurantContainer.innerHTML += createRestaurantItemTemplate(restaurantItem);
       });
     } catch (err) {
@@ -29,8 +30,6 @@ const Home = {
       // load.style.display = 'none';
       // content.innerHTML = `<b>Error: Ooups.. please check your connection!!</b> ${err}`;
     }
-
-
   },
 };
 

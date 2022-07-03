@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals *//* eslint-disable linebreak-style */
 import CacheHelper from './utils/cache-helper';
 
 const { assets } = global.serviceWorkerOption;

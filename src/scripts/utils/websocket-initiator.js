@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-underscore-dangle */
 import NotificationHelper from './notification-helper';
 import CONFIG from '../global/config';
 

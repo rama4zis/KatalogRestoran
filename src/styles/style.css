@@ -329,6 +329,8 @@ Card Item
   border-radius: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;
+
+  font-size: 44px;
 }
 
 .like {
